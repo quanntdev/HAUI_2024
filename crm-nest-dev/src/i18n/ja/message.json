@@ -1,0 +1,195 @@
+{
+  "Nicer" : "Nicer 1 {name}",
+  "status_messages": {
+    "validate_failed":"保存に失敗しました",
+    "login_success": "成功にログインしました",
+    "logout_success": "成功にログアウトしました",
+    "create_success": "成功に作成しました",
+    "delete_success": "成功に削除しました",
+    "update_success": "成功に更新しました",
+    "get_success": "取得に成功しました",
+    "existed_relation_data": "関係データが保存されています",
+    "invalid_customer_data": "無効な顧客データ",
+    "invalid_token_data": "無効なトークンデータ",
+    "cid_is_existed": "CIDが存在しています",
+    "bad_request": "不正なリクエスト",
+    "validation_failed": "検証に失敗しました",
+    "admin_not_found": "管理者が見つかりません",
+    "contact_not_found": "連絡先が見つかりません",
+    "unauthorized": "認証されていません",
+    "password_invalid": "パスワードが無効です",
+    "email_invalid": "メールアドレスが無効です",
+    "not_found_user": "ユーザーが見つかりません",
+    "data_not_found": "データが見つかりません",
+    "status_default_not_found": "ステータスデフォルトが見つかりません",
+    "cid_not_found": "CIDが見つかりません",
+    "cid_over_limit": "CIDの上限を超えています",
+    "billing_type_default_not_found": "デフォルトの請求タイプが見つかりません",
+    "overflow_code": "オーバーフローコード",
+    "not_found": "見つかりません！",
+    "expired_token": "トークンの有効期限が切れました！",
+    "can_not_found_model":"モデルが見つかりません",
+    "can_not_found_task":"タクスが見つかりません",
+    "can_not_found_all_users_in_model":"モデル内のすべてのユーザーが見つかりません",
+    "can_not_access_this_task":"このタクスにアクセスできません",
+    "payment_amount_invalid":"支払額が無効です",
+    "can_not_found_this_name":"この {name} が見つかりません",
+    "invalid_payment_method":"お支払い方法が無効です",
+    "invalid_selected_new_invoice":"新しい請求書が無効に選択されました",
+    "PAYMENT AMOUNT INVALID":"支払額が無効です",
+    "Can_not_found_payment_method_ID":"お支払い方法 ID が見つかりません",
+    "Can_not_found_payment":"支払いが見つかりません",
+    "CAN_NOT_CREATE_ORDER_ITEM_WITHOUT_CURRENCY":"通貨なしで注文アイテムを作成できません",
+    "INVALID_CUSTOMER_DATA" :"無効な顧客データ",
+    "Customer_does_not_exist":"顧客が存在しません",
+    "INVOICE_IS_NOT_FOUND":"請求書が見つかりません",
+    "INVOICE_CODE_IS_REQUIRE":"必須請求書コード",
+    "THIS_INVOICE_CAN_NOT_CREATE_PAYMENT":"この請求書では支払いを作成できません",
+    "Cannot_find":"{名前} が見つかりません",
+    "Can_not_found_invoice_by_invoice_ID":"請求書 ID で請求書が見つかりません",
+    "Can_not_create_payment_for_this_invoice":"この請求書の支払いを作成できません",
+    "EXISTED_RELATION_DATA":"既存の関係データ",
+    "this_InvoiceID_has_found":"この請求書 ID が見つかりました",
+    "You_can_not_update_this_InvoiceCode":"この InvoiceCode は更新できません",
+    "Customer_Level_name_already_exists":"お客様レベル名は既に存在しています",
+    "cannot_delete_because_relations":"関係データが保存されています",
+    "merge_customer_success": "顧客のマージに成功しました"
+  },
+
+  "customer": {
+    "company_has_been_created" :"顧客は存在しています"
+  },
+
+  "country": {
+    "country_has_been_created" : "国 {name} は既に存在します"
+  },
+  "sale-chanel": {
+    "sale-chanel_has_been_created" : "販売チャネル {name} は既に存在します"
+  },
+
+  "deal" : {
+    "cannot_found_this_customer" : "この顧客を見つけることができません",
+    "cannot_find_currency" : "通貨が見つかりません"
+  },
+
+  "contact" : {
+    "cannot_update_contact" : "連絡先を更新できません"
+  },
+
+  "order" : {
+    "can_not_found_deal_id" : "取引IDが見つかりません",
+    "currencyId_fail" : "CurrencyIdが無効です",
+    "cannot_find_currency" : "通貨が見つかりません",
+    "cannot_update_currency" : "通貨を更新できません",
+    "CAN_NOT_CHANGE_ORDER_CURRENCY" : "注文の通貨を変更できません"
+  },
+
+  "notification": {
+    "mention" : "コメントであなたをメンションしました {value}",
+    "assign" : "<p><span style='font-weight:700'> {value} </span>であなたに割り当てました",
+    "left" : "<p><span style='font-weight:700'> {value} </span>であなたを去ってしまった",
+    "edit" : "<p><span style='font-weight:700'> {value} </span>を編集しました",
+    "comment": "<p><span style='font-weight:700'> {value} </span>でコメントしました",
+    "attach_file": "<p><span style='font-weight:700'> {value} </span>にファイルを添付しました",
+    "attach_image": "<p><span style='font-weight:700'> {value} </span>にイメージを添付しました",
+    "reacted": "<p><span style='font-weight:700'> {value} </span> あなたのコメントにリアクションしました",
+    "task_dueDate" : "<p> <span style='font-weight:700'> {value} </span>  お早めに"
+  },
+
+  "label" : {
+    "deals" : "商談",
+    "contacts": "連絡先",
+    "orders": "案件",
+    "invoices": "請求書",
+    "payments": "支払い",
+    "tasks": "タスク",
+    "customers": "顧客",
+    "payment_partner": "パートナ支払い",
+    "invoice_partner": "パートナーの請求書"
+  },
+
+  "lognote":{
+    "create":"この{name}は作成されました",
+    "edit":"この{name}は編集されました",
+
+    "phone":"電話",
+    "change_phone":"この{name1}{name2}は[{name3}]から[{name4}]に変更されました",
+
+    "Descriptions":"説明",
+    "change_descriptions":"この連絡先の説明が編集されました",
+    "old_change_descriptions":"この{name1}{name2}は編集されました",
+
+    "email":"Eメール",
+    "change_email":"この{name1}{name2}は[{name3}]から[{name4}]に変更されました",
+  
+     
+    "card_visit":"カード",
+    "change_card_visit":"名刺が編集されました",
+    "old_change_card_visit":"{name1}{name2}が編集されました", 
+    
+    
+
+    "archive":"アーカイブ",
+    "name":"名前",
+    "change_name":"この{name1}{name2}[{name3}]から[{name4}]に変更されました",
+    "update_name":"この{name1}{name2}は[{name3}]に更新されました",
+
+    "status":"スターテス",
+    "change_status":"この{name1} {name2} は再発行されました ",
+    "update_status":"この{name1}{name2}は[{name3}]に更新されました",
+    
+
+    "payment_method": "支払方法",
+    "create_payment":"この[{name1}]請求書は、ステータスが[{name2}]、支払い日が[{name3}]の支払いが作成されました。",
+    
+
+    "province":"州",
+    "invoice_customer_name":"請求書のお客様名",
+
+    "male":"男",
+    "female":"女性",
+    "gender":"性別",
+    "change_gender":"{name1}の性別が[{name2}]から[{name3}]に変更されました",
+
+    "security":"安全",
+    "priority":"優先順位",
+    "delivery_date":"配送日",
+    "value":"価値",
+    "country_name":"国の名前",
+    "currency":"通貨",
+    "due_date":"期日",
+    "start_date":"開始日",
+    "amount":"額",
+    "date":"日",
+    
+    "check_list":"チェックリスト",
+    "create_check_list":"この{name2}の{name1}は、この{name3}で作成されました",
+
+
+    "left":"辞める",
+    "join":"参加する",
+   "user_asign":"{name1} はこの{name3}を{name2}ことになりますた。",
+    
+    "done":"終わり",
+    "done_object":"{name1}は{name5}に{name4}の{name2}を持っています",
+
+    "create_order_item":"この[{name}]注文アイテムが作成されました",
+    "delete_order_item":"この[{name}]注文アイテムは削除されました",
+
+    "create_invoice":"この[{name}]の請求書は作成されました",
+    "create_order":"この[{name}]オーダーは作成されました",
+    "create_deal":"この[{name}]取引が作成されました",
+
+    "attach_image":"この画像を添付しました",
+    "attach_file":"がこのファイルを添付しました",
+
+
+    "few_second_ago":"数秒前",
+     "minutes_ago":"{time} 分前",
+     "hours_ago":"{time} 時前"
+  }
+
+}
+
+
+

@@ -1,0 +1,33 @@
+@import "../../styles/styles.module.scss";
+
+.logo {
+  margin-top: 5px;
+  border: 1px solid red;
+  width: 228px * 4;
+  height: 58px * 4;
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+.logo-btn {
+  display: none;
+}
+
+.upload-label {
+  @extend .box-shadow;
+  @extend .bg-gradient-primary;
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(to right, $colorPrimaryLight, $colorBlue);
+  }
+}

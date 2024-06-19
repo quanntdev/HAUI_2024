@@ -1,0 +1,130 @@
+@import "../../styles/styles.module.scss";
+
+.dialog {
+  &-edit {
+    position: absolute;
+    left: 10;
+    top: 50;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.box-title {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: $colorGrey;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.invoice-input {
+  position: relative;
+
+  .invoice-add {
+    position: absolute;
+    top: 36px;
+    right: 0;
+
+    &-edit {
+      position: absolute;
+      top: 2px;
+      right: 0;
+    }
+  }
+
+  .amount-sign {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+
+  .amount-sign-edit {
+    position: absolute;
+    top: 9px;
+    right: 16px;
+  }
+}
+
+.label-log {
+  color: rgb(135, 135, 255);
+}
+
+.form-box {
+  width: 100%;
+  display: flex;
+}
+
+.form-title {
+  background-color: $textPayment;
+  border: 1px solid $textTitlePayment;
+  padding: 4px 0;
+}
+
+.form-title-text {
+  border: 1px solid $textTitlePayment;
+  padding: 4px 0;
+}
+
+.flex-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-typography {
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: $textPayment;
+  font-weight: 300;
+}
+
+.icon-edit {
+  margin-bottom: 8px;
+  float: right;
+}
+
+.box-text-total {
+  margin-top: 5px;
+  margin-left: 5px;
+  color: $textValueInvoice;
+  overflow-wrap: break-word;
+}
+
+.box-text-total-push {
+  margin-top: 5px;
+  margin-left: 5px;
+  overflow-wrap: break-word;
+}
+
+.value-balance {
+  display: flex;
+  justify-content: end;
+
+  .balance-text {
+    font-size: 14px;
+
+    span {
+      font-style: italic;
+    }
+  }
+}
+
+.input-file {
+  display: none;
+}
+
+.btn-delete {
+  position: absolute;
+  top: 55%;
+  right: 0;
+}

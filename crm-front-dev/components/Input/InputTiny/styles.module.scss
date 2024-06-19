@@ -1,0 +1,122 @@
+.popup {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  display: block;
+  overflow: hidden ;
+  z-index: 100000;
+  padding: 10px;
+
+  .title {
+    text-align: center;
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: small;
+  }
+
+  .body {
+    height: 300px;
+    display: block;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #000000;
+      border-radius: 10px;
+  }
+  }
+}
+
+.items {
+  display: flex;
+
+  .name {
+    font-size: 15px;
+    margin-left: 20px;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.real {
+  position: relative !important;
+}
+
+.preview-img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+
+  img {
+    width: 100% !important;
+    object-fit: contain;
+  }
+}
+
+.text-fails {
+  color: red;
+}
+
+.img-preview {
+  width: 31%;
+  height: 150px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid red
+  }
+
+  p {
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .img-hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    height: 150px;
+    margin-top: -155px;
+    display: none;
+    align-items: center;
+    text-align: center;
+    line-height: 150px;
+    white-space: nowrap;
+    color: white;
+    border-radius: 5px;
+  }
+
+  &:hover {
+    .img-hover {
+      display: block !important;
+    }
+  }
+}

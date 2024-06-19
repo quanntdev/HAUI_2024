@@ -1,0 +1,54 @@
+@import "../../../styles/styles.module.scss";
+
+.checklist-popover {
+  &-title {
+    margin: 4px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid $textTitlePayment;
+
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 auto;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &-content {
+    margin: 4px 16px;
+    width: 90%;
+  }
+}
+
+.detail{
+  &-left-info {
+  padding: 4px 8px;
+  background-color: $textPayment;
+  margin-bottom: 4px;
+  }
+
+  &-icon-left{
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+}
+
+.button-close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 40px;
+  height: 40px;
+  background-color: $textPayment;
+  border-radius: 50%;
+}

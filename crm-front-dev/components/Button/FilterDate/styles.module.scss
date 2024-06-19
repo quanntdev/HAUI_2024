@@ -1,0 +1,48 @@
+.list-date {
+  position: absolute;
+  top: -11px;
+  z-index: 99;
+  margin-left: 20px;
+
+  i {
+    position: relative;
+    top: 13px;
+    font-size: 17px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  }
+
+  p {
+    color: hsl(0, 0%, 20%);
+    background-color: #e9e7e7;
+    border: none;
+    font-size: 14px;
+    width: 100px;
+    margin-top: 15px;
+
+    span:nth-child(2) {
+      cursor: pointer;
+      padding: 2px 5px;
+      color: black;
+    }
+
+    span:nth-child(2):hover {
+      background-color: tomato;
+      color: white;
+    }
+  }
+
+  p:nth-child(1) {
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  p:nth-child(2) {
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+.input-item {
+ background-color: white !important;
+}

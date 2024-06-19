@@ -1,0 +1,13 @@
+@import "../../../styles/styles.module.scss";
+
+.btn-filter {
+  margin-left: 20px;
+  color: $colorBlack;
+}
+
+@media screen and (max-width: 375px) {
+  .bth-filter-user {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}

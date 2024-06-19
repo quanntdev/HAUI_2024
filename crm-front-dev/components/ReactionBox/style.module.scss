@@ -1,0 +1,47 @@
+@import "../../styles/styles.module.scss";
+
+.quickly-react {
+  height: 40px;
+  width: 250px;
+  position: absolute;
+  background-color: rgb(240, 238, 238);
+  padding: 1px 8px;
+  border-radius: 5px;
+  border: 1px solid $textTitlePayment;
+
+  .quickly-react-button {
+    padding: 0;
+    min-width: 0 !important;
+    font-size: 20px;
+    margin:0px 5px;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.quickly-react-full {
+  height: 40px;
+  width: 250px;
+  position: absolute;
+  right: 220px;
+  padding: 1px 8px;
+  border-radius: 5px;
+}
+
+.quickly-react-counter {
+  position: absolute;
+  margin-top: 80px;
+
+  div {
+    div {
+      div {
+       padding: 15px !important;
+       border-radius: 20px !important;
+
+       div {
+        padding: 5px !important;
+        z-index: 10000 !important;
+       }
+      }
+    }
+  }
+}

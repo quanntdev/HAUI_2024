@@ -1,0 +1,66 @@
+@import "../../styles/styles.module.scss";
+
+.deal-filter-box {
+  .deal-filter-header {
+    padding: 15px 10px;
+    background-color: $colorBorder;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .deal-filter-items {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.dialog-container {
+  justify-content: flex-end;
+}
+.dialog-edit {
+  position: absolute;
+  left: 10;
+  top: 50;
+  min-height: 45%;
+  min-width: 50%;
+}
+
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0;
+}
+
+.select-title {
+  margin-bottom: 8px;
+}
+
+.box-title {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: $colorGrey;
+}
+
+.box-assign {
+  display: flex;
+
+  .box-gird{
+    max-width: 30%;
+  }
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.select-react-css {
+  height: 56px;
+}
+
+.labelText {
+  margin-top: 10px;
+}

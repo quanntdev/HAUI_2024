@@ -1,0 +1,297 @@
+@import "../../styles/styles.module.scss";
+
+.detail-right {
+  padding: 8px;
+
+  &-box {
+    margin-bottom: 32px;
+  }
+
+  &-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-content {
+    padding-left: 8px;
+    font-size: 14px;
+  }
+
+  &-comment {
+    margin-top: 16px;
+  }
+
+  &-description {
+    margin-top: 16px;
+  }
+}
+
+.detail-left {
+  border: 1px solid $textTitlePayment;
+  padding: 8px;
+
+  &-box {
+    margin: 16px 0;
+  }
+
+  &-title {
+    font-size: 14px;
+  }
+
+  &-content {
+    font-size: 13px;
+    margin: 4px 8px;
+  }
+
+  &-table {
+    margin: 4px 8px;
+
+    &-row {
+      font-size: 13px;
+      background-color: $textPayment;
+      padding: 6px;
+    }
+  }
+
+  &-avatar {
+    display: flex;
+  }
+
+  &-info {
+    padding: 4px 8px;
+    background-color: $textPayment;
+    margin-bottom: 4px;
+  }
+}
+
+.button-close {
+  position: absolute;
+  top: 3px;
+  right: -6px;
+  width: 40px;
+  height: 40px;
+}
+
+.detail-title {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.detail-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.detail-icon-left {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.detail-checkbox {
+  padding: 0;
+  margin-right: 4px;
+}
+
+.box-comment-input {
+  display: flex;
+}
+
+.content {
+  margin-top: 16px;
+}
+
+.button-click {
+  cursor: pointer;
+
+  &:hover {
+    background-color: $colorGrey;
+  }
+}
+
+.log_item {
+  padding: 10px;
+
+  &-author {
+    display: flex;
+    font-style: italic;
+  }
+}
+
+.input-file {
+  display: none;
+}
+
+.lognote-items {
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.lognote-dashboard-content {
+  margin-left: 20px;
+
+  .header {
+    .name {
+      color: $textLink;
+      cursor: pointer;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .object {
+      margin-left: 30px;
+
+      .object-type {
+        color: $textLinkObject;
+        margin-left: 10px;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .object-name-customer {
+      color: $textLinkObject;
+      margin-left: 5px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .time {
+      margin-left: 40px;
+      font-size: 15px;
+      cursor: pointer;
+      color: $textLink;
+
+      &:hover {
+        color: $textLink;
+        text-decoration: underline;
+      }
+
+      .time-icon {
+        font-size: 15px;
+        transform: translateY(2px);
+      }
+    }
+  }
+
+  .body {
+    margin-top: 20px;
+
+    img {
+      max-width: 1000px;
+      max-height: 500px;
+    }
+  }
+}
+
+.icon-to {
+  margin-left: 20px;
+
+  .icon-to-ic {
+    font-size: 20px;
+    transform: translateY(4px);
+    color: $textLink;
+  }
+}
+
+.quickly-react {
+  height: 40px;
+  width: 250px;
+  position: absolute;
+  background-color: rgb(240, 238, 238);
+  right: 100px;
+  padding: 1px 8px;
+  border-radius: 5px;
+  border: 1px solid $textTitlePayment;
+
+  .quickly-react-button {
+    padding: 0;
+    min-width: 0 !important;
+    font-size: 20px;
+    margin: 0px 5px;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.quickly-react-full {
+  height: 40px;
+  width: 250px;
+  position: absolute;
+  right: 220px;
+  padding: 1px 8px;
+  border-radius: 5px;
+  z-index: 10000000;
+}
+
+.quickly-react-counter {
+  margin-top: 5px;
+  display: inline-block;
+  div {
+    div {
+      div {
+        padding: 5px !important;
+        border-radius: 20px !important;
+
+        div {
+          padding: 5px !important;
+          z-index: 10000 !important;
+        }
+
+        span {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+}
+
+.box-comment {
+  display: flex;
+  justify-content: space-between;
+
+  .commen-box {
+    width: 93%;
+    align-items: center;
+    display: flex;
+    background-color: white;
+
+    .commen-box-btn {
+      width: 100%;
+      align-items: center;
+      background-color: white;
+      border: 1px solid $textBtnCancel;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 7px;
+      color: $textBtnCancel;
+
+      &:hover {
+        color: #000;
+        background-color: $textPayment;
+      }
+    }
+  }
+
+  .commen-box-show {
+    width: 93%;
+  }
+}
+
+.lognote_Das {
+  position: relative;
+}

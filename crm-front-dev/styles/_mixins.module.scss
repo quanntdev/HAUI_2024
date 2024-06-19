@@ -1,0 +1,23 @@
+@mixin three-dot($lineNumber: 3, $width: 150px) {
+  -webkit-line-clamp: $lineNumber;
+  -webkit-box-orient: vertical;
+  display: inline-block;
+  max-width: $width;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+@mixin three-dot-not-width($lineNumber: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lineNumber;
+  overflow: hidden;
+}
+
+@mixin size-fixed($width, $height: $width) {
+  width: $width;
+  height: $height;
+  min-width: $width;
+  min-height: $height;
+}

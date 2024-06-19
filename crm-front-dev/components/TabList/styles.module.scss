@@ -1,0 +1,64 @@
+@import "../../styles/styles.module.scss";
+
+.box-header {
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+
+  .box-header-item {
+    height: 150px;
+    min-width: 300px;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px #e6e5e5;
+    background-color: white;
+
+    .content {
+      text-align: center;
+
+      .money {
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .money-haspay {
+        font-size: 30px;
+        font-weight: 700;
+        color: red;
+      }
+
+      .name {
+        font-size: 14px;
+        color: $textBtnCancel;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .box-header-calculate {
+    align-self: center;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .box-header-item {
+    min-width: 100px !important;
+    width: 250px !important;
+    height: 100px !important;
+
+    .content {
+      .money {
+        font-size: 20px !important;
+      }
+
+      .money-haspay {
+        font-size: 20px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@use "sass:math";
+$mobile-width: 1240px;
+
+@function vw-mb($px-vw, $base-vw: 375px) {
+  @return math.div($px-vw * 100vw, $base-vw)
+}
+
+@mixin mobile { @media (max-width: $mobile-width) {
+    @content;
+  }
+}

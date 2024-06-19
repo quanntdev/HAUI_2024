@@ -1,0 +1,369 @@
+@import "../../../styles/styles.module.scss";
+@import "../../contact/styles.module.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.page-filter {
+  width: 75%;
+  display: flex;
+  margin: 20px 20px 20px 0;
+}
+
+.breadcrumb-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorWhite;
+  padding: 10px;
+
+  .breadcrumb-title {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    .icon-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $colorWhite;
+      background: linear-gradient(to right, $colorPink, $colorPurple);
+    }
+
+    .title {
+      margin-left: 10px;
+    }
+  }
+}
+.grid-price-text {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 20px 0;
+
+  .btn-app-icon {
+    color: $colorPurple;
+  }
+
+  .btn-new-contact {
+    border-radius: 50px;
+    background: linear-gradient(to right, $colorPink, $colorPurple);
+    font-size: 14px;
+    padding: 10px 30px;
+    color: $colorWhite;
+    &:hover {
+      background: linear-gradient(to right, $colorPrimaryLight, $colorBlue);
+    }
+  }
+}
+
+.btn-delete {
+  background-color: $btnDelete;
+  color: $colorWhite;
+
+  &:hover {
+    background-color: $btnDelete;
+  }
+}
+
+.contact {
+  &-wrapper {
+    margin: 16px 0;
+  }
+
+  &-card {
+    padding-top: 24px;
+
+    &:last-child {
+      padding-bottom: 32px;
+    }
+  }
+
+  &-input {
+    color: $textBrow;
+  }
+
+  &-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  &-detail-row {
+    margin: 0;
+    padding-right: 10px;
+    align-items: center;
+  }
+
+  &-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-top: 10px;
+
+    &-description {
+      padding: 0 16px 16px;
+      height: fit-content;
+      min-height: 250px;
+    }
+
+    &-card {
+      padding: 0 16px 16px;
+      height: fit-content;
+      min-height: 250px;
+
+      &__title {
+        text-align: center;
+        border: 1px solid $colorBlack;
+        border-radius: 5px;
+        padding: 40px;
+        min-height: 184px;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.contact-grid {
+  display: flex;
+}
+
+.box-upload {
+  margin-top: 10px;
+
+  label {
+    background-color: $colorPrimary;
+
+    &:hover {
+      background-color: $colorPrimaryLight;
+    }
+  }
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid;
+
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.line-dash {
+  border-left: 2px dashed $colorGrayDraft;
+}
+
+.contact-icon-info {
+  display: none;
+}
+
+.edit-icon-info {
+  display: none;
+}
+
+.contact-content-info {
+  margin-top: -10px;
+}
+
+.customer-edit-input {
+  height: 50px !important;
+}
+
+.contact-detail-title {
+  height: 50px;
+  align-items: center;
+  line-height: 40px;
+  white-space: nowrap;
+  margin-top: 6px;
+  &-delete {
+    text-align: center;
+  }
+}
+
+.contact-detail-title2 {
+  height: 90px;
+  align-items: center;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+  .line-dash {
+    border-left: none;
+    border-top: 2px dashed $colorGrayDraft;
+  }
+
+  .contact-icon-info {
+    display: block;
+  }
+
+  .edit-icon-info {
+    display: block;
+  }
+
+  .contact-icon-address {
+    display: none;
+  }
+
+  .edit-icon-address {
+    display: none;
+  }
+}
+
+.delete-btn {
+  position: absolute;
+  right: 80px;
+  margin-top: -40px;
+}
+
+.box-title {
+  padding: 10px;
+  margin: 10px 0;
+  margin-left: -10px;
+  background-color: $colorGrey;
+  width: 100%;
+
+  p {
+    font-weight: bold;
+  }
+}
+
+.invoice-name {
+  font-size: 30px;
+  color: #24d2b5;
+  margin-left: 10px;
+}
+
+.invoice-customer {
+  font-size: 20px;
+  color: #24d2b5;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.box-title-right {
+  padding: 10px;
+  margin: 15px 0;
+  margin-left: -10px;
+  background-color: $colorGrey;
+  width: 100%;
+  p {
+    font-weight: bold;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .page-filter {
+    display: block;
+  }
+  .page-title {
+    display: block;
+    .search {
+      .btn {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+
+.dialog {
+  &-edit {
+    position: absolute;
+    left: 10;
+    top: 50;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.sample {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+
+.content {
+  height: 70px;
+  line-height: 70px;
+  white-space: nowrap;
+  display: flex;
+
+  .company-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+  }
+}
+
+
+.dev {
+  background: linear-gradient(to right, $colorPrimaryLight, $colorBlue);
+  height: 70px;
+  width: 100%;
+  clip-path: polygon(65% 0%, 70% 50%, 65% 100%, 0% 100%, 6% 50%, 0% 0%);
+}
+
+.dev2 {
+  background:linear-gradient(to right, rgb(3, 156, 3), rgb(130, 237, 130));
+  height: 70px;
+  width: 100%;
+  float: right;
+  clip-path: polygon(85% 0%, 90% 50%, 85% 100%, 20% 100%, 25% 50%, 20% 0%);
+}
+
+.text-detail-create {
+  text-align: end;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(to right, $colorPink, $colorPurple);
+  font-size: 12px;
+  padding: 6px 26px;
+  color: $colorWhite;
+  &:hover {
+    background: linear-gradient(to right, $colorPrimaryLight, $colorBlue);
+  }
+}
+

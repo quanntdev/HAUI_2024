@@ -1,0 +1,356 @@
+@import "../../../styles/styles.module.scss";
+@import "../../contact/styles.module.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.page-filter {
+  width: 75%;
+  display: flex;
+  margin: 20px 20px 20px 0;
+}
+
+.breadcrumb-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorWhite;
+  padding: 10px;
+
+  .breadcrumb-title {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    .icon-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $colorWhite;
+      background: linear-gradient(to right, $colorPink, $colorPurple);
+    }
+
+    .title {
+      margin-left: 10px;
+    }
+  }
+}
+.grid-price-text {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 20px 0;
+
+  .btn-app-icon {
+    color: $colorPurple;
+  }
+
+  .btn-new-contact {
+    border-radius: 50px;
+    background: linear-gradient(to right, $colorPink, $colorPurple);
+    font-size: 14px;
+    padding: 10px 30px;
+    color: $colorWhite;
+    &:hover {
+      background: linear-gradient(to right, $colorPrimaryLight, $colorBlue);
+    }
+  }
+}
+
+.btn-delete {
+  background-color: $btnDelete;
+  color: $colorWhite;
+
+  &:hover {
+    background-color: $btnDelete;
+  }
+}
+
+.contact {
+  &-wrapper {
+    margin: 16px 0;
+  }
+
+  &-card {
+    padding-top: 24px;
+    width: 100%;
+
+    &:last-child {
+      padding-bottom: 32px;
+    }
+  }
+
+  &-input {
+    color: $textBrow;
+  }
+
+  &-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  &-detail-row {
+    margin: 0;
+    padding-right: 10px;
+    align-items: center;
+  }
+
+  &-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-top: 10px;
+
+    &-description {
+      padding: 0 16px 16px;
+      height: fit-content;
+      min-height: 250px;
+    }
+
+    &-card {
+      padding: 0 16px 16px;
+      height: fit-content;
+      min-height: 250px;
+
+      &__title {
+        text-align: center;
+        border: 1px solid $colorBlack;
+        border-radius: 5px;
+        padding: 40px;
+        min-height: 184px;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.contact-grid {
+  display: flex;
+}
+
+.box-upload {
+  margin-top: 10px;
+
+  label {
+    background-color: $colorPrimary;
+
+    &:hover {
+      background-color: $colorPrimaryLight;
+    }
+  }
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid;
+
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.line-dash {
+  border-left: 2px dashed $colorGrayDraft;
+}
+
+.contact-icon-info {
+  display: none;
+}
+
+.edit-icon-info {
+  display: none;
+}
+
+.contact-content-info {
+  margin-top: -10px;
+}
+
+.customer-edit-input {
+  height: 50px !important;
+}
+
+.contact-detail-title {
+  height: 50px;
+  align-items: center;
+  line-height: 40px;
+  white-space: nowrap;
+  margin-top: 6px;
+  &-delete {
+    text-align: center;
+  }
+}
+
+.contact-detail-title2 {
+  height: 90px;
+  align-items: center;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+  .line-dash {
+    border-left: none;
+    border-top: 2px dashed $colorGrayDraft;
+  }
+
+  .contact-icon-info {
+    display: block;
+  }
+
+  .edit-icon-info {
+    display: block;
+  }
+
+  .contact-icon-address {
+    display: none;
+  }
+
+  .edit-icon-address {
+    display: none;
+  }
+}
+
+.delete-btn {
+  position: absolute;
+  right: 80px;
+  margin-top: -40px;
+}
+
+.box-title {
+  padding: 10px;
+  margin: 10px 0;
+  margin-left: -10px;
+  background-color: $colorGrey;
+  width: 100%;
+
+  p {
+    font-weight: bold;
+  }
+}
+
+.box-title-right {
+  padding: 10px;
+  margin: 15px 0;
+  margin-left: -10px;
+  background-color: $colorGrey;
+  width: 100%;
+  p {
+    font-weight: bold;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .page-filter {
+    display: block;
+  }
+  .page-title {
+    display: block;
+    .search {
+      .btn {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.box-header {
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+
+  .box-header-item {
+    height: 150px;
+    min-width: 300px;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px #e6e5e5;
+
+    .content {
+      text-align: center;
+
+      .money {
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .money-haspay {
+        font-size: 30px;
+        font-weight: 700;
+        color:red
+      }
+
+      .name {
+        font-size: 14px;
+        color: $textBtnCancel;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .box-header-calculate {
+    align-self: center;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .box-header-item {
+    min-width: 100px !important;
+    width: 250px !important;
+    height: 100px !important;
+
+    .content {
+
+      .money {
+        font-size: 20px !important;
+      }
+
+      .money-haspay {
+        font-size: 20px !important;
+      }
+    }
+  }
+}

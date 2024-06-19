@@ -1,0 +1,10 @@
+.btn-merge {
+  background: linear-gradient(90deg, #da8cff, #9a55ff);
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+
+  &:hover {
+    background: linear-gradient(90deg, #bb5fe5, #6d21de);
+  }
+}

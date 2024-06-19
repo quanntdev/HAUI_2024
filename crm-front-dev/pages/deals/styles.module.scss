@@ -1,0 +1,405 @@
+@import "../../styles/styles.module.scss";
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 20px 0;
+}
+
+.search-deal {
+  display: flex;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.deal-status {
+  font-weight: 700;
+  padding: 5px 30px;
+}
+
+.breadcrumb-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorWhite;
+  padding: 10px;
+
+  .breadcrumb-title {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    .icon-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $colorWhite;
+      background: linear-gradient(to right, $colorPink, $colorPurple);
+    }
+
+    .title {
+      margin-left: 10px;
+    }
+  }
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 20px 0;
+
+  .btn-app-icon {
+    color: $colorPurple;
+  }
+
+  .btn-new-contact {
+    border-radius: 50px;
+    background: linear-gradient(to right, $colorPink, $colorPurple);
+    font-size: 14px;
+    padding: 10px 30px;
+    color: $colorWhite;
+  }
+}
+
+.btn-delete {
+  background-color: $btnDelete;
+  color: $colorWhite;
+
+  &:hover {
+    background-color: $btnDelete;
+  }
+}
+
+.deal {
+  &-wrapper {
+    margin: 16px 0;
+  }
+
+  &-info {
+    background-color: white;
+    border-radius: 6px;
+    position: relative;
+    margin-top: 21px;
+  }
+
+  &-card {
+    padding-top: 24px;
+    margin: 0 20px;
+
+    &:last-child {
+      padding-bottom: 13px;
+    }
+  }
+
+  &-group {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+
+    .box-text {
+      white-space: nowrap;
+      width: 450px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .text-create {
+      color: #3f48cc;
+    }
+  }
+
+  &-label {
+    margin-right: 5px;
+  }
+
+  &-input {
+    color: $textBrow;
+  }
+
+  &-left {
+    height: 310px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    table tbody tr td {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-top: 10px;
+
+    &-description {
+      padding: 0 16px 16px;
+      height: fit-content;
+      height: 360px;
+    }
+
+    &-card {
+      padding: 0 16px 16px;
+      height: fit-content;
+      min-height: 250px;
+
+      &__title {
+        text-align: center;
+        border: 1px solid $colorBlack;
+        border-radius: 5px;
+        padding: 40px;
+        min-height: 184px;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 16px;
+  }
+
+  &-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.box-upload {
+  margin-top: 10px;
+
+  label {
+    background-color: $colorPrimary;
+
+    &:hover {
+      background-color: $colorPrimaryLight;
+    }
+  }
+}
+
+.deal-title {
+  font-weight: 700;
+}
+
+.customer-input {
+  font-size: 16px;
+}
+
+.deal-group-left {
+  padding-top: 16px;
+  margin-left: 16px;
+}
+
+.button-order {
+  .text-detail-create {
+    text-align: end;
+    cursor: pointer;
+    border-radius: 50px;
+    background: linear-gradient(to right, $colorPink, $colorPurple);
+    font-size: 14px;
+    padding: 10px 30px;
+    color: $colorWhite;
+  }
+
+  .text-detail-create-disable {
+    text-align: end;
+    color: #3f48cc;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 10px 30px;
+    background-color: #dcdbdb;
+  }
+}
+
+.deal-right {
+  border-right: 2px dashed lightgray;
+  padding-top: 7px;
+
+  .text-button-detail {
+    justify-content: flex-end;
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .text-detail {
+    display: flex;
+
+    .text-detail-name {
+      font-size: 24px;
+      font-weight: 700;
+      overflow-wrap: break-word;
+    }
+  }
+
+  .box-deal-detail {
+    &-row {
+      margin: 10px 0;
+      padding-right: 10px;
+      align-items: center;
+      height: 40px;
+    }
+
+    &-form {
+      margin: 10px 0;
+      padding-right: 10px;
+      align-items: center;
+    }
+  }
+}
+
+.deal-group-right {
+  margin-top: 16px;
+  display: flex;
+}
+
+.tab-panel {
+  background-color: #fff;
+  width: 161px;
+}
+
+.box-tab {
+  border-collapse: separate;
+  border-spacing: 2px;
+  margin-left: 10px;
+  min-height: 20px;
+
+  .css-jpln7h-MuiTabs-scroller {
+    position: initial !important;
+  }
+}
+
+.personal-info {
+  list-style: none;
+  margin: 0 16px;
+  padding: 0;
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    display: block;
+    color: #4f4f4f;
+    float: left;
+    margin-right: 30px;
+    width: 25%;
+  }
+
+  .text {
+    display: block;
+    color: #8e8e8e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.box-description {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .box-title {
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+.box-content {
+  width: 98%;
+  margin-left: 10px;
+  overflow: auto;
+}
+
+.deal-box-content {
+  display: flex;
+  width: 100%;
+  margin-left: 7px;
+}
+
+.box-text-description {
+  height: 100%;
+}
+
+.btn-filter-icon {
+  background: rgb(237, 231, 246);
+  padding: 5px 30px;
+  margin-left: 20px;
+
+  &:hover {
+    background-color: rgb(94, 53, 177);
+    color: #fff;
+  }
+}
+
+.deal-name {
+  width: 200px;
+}
+
+.customer {
+  width: 200px;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .max-width {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .description-tab {
+    margin-left: -30px;
+    width: 120%;
+  }
+}
+
+.box-title {
+  padding: 10px;
+  margin: 10px 0;
+  margin-left: -10px;
+  background-color: $colorGrey;
+  width: 100%;
+}
+
+.box-title-right {
+  padding: 2px 10px;
+  margin: 15px 0;
+  margin-left: -10px;
+  background-color: $colorGrey;
+  width: 100%;
+  margin-top: -10px;
+  align-items: center;
+
+  .title {
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .page-title {
+    display: block;
+
+    .search {
+      display: block !important;
+    }
+
+    .create-deal {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../styles/styles.module.scss";
+.dialog-container {
+    justify-content: flex-end;
+}
+.dialog-edit {
+  position: absolute;
+  left: 10;
+  top: 50;
+  min-height: 45%;
+  min-width: 50%;
+}
+
+
+.dialog-change-password {
+  width: 530px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0;
+}
+
+.select-title {
+  margin-bottom: 8px;
+}
+
+.box-title {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: $colorGrey; 
+}
+
+.box-assign {
+  display: flex;
+
+  .box-gird{
+    max-width: 30%;
+  }
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}

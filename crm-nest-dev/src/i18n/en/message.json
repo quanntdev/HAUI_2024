@@ -1,0 +1,182 @@
+{
+  "Nicer": "Nicer {name}",
+  "status_messages": {
+    "validate_failed":"VALIDATION FAILED",
+    "login_success": "Login successfully",
+    "logout_success": "Logout successfully",
+    "create_success": "Created successfully",
+    "delete_success": "Deleted successfully",
+    "update_success": "UPDATE SUCCESSFULLY",
+    "get_success": "Retrieved successfully",
+    "existed_relation_data": "Existed relation data",
+    "invalid_customer_data": "Invalid customer data",
+    "invalid_token_data": "Invalid token data",
+    "cid_is_existed": "CID is existed",
+    "bad_request": "Bad request",
+    "validation_failed": "Validation failed",
+    "admin_not_found": "Admin not found",
+    "contact_not_found": "Contact not found",
+    "unauthorized": "Unauthorized",
+    "password_invalid": "Invalid password",
+    "email_invalid": "Invalid email",
+    "not_found_user": "User not found",
+    "data_not_found": "Data not found",
+    "status_default_not_found": "Default status not found",
+    "cid_not_found": "CID not found",
+    "cid_over_limit": "CID over limit",
+    "billing_type_default_not_found": "Default billing type not found",
+    "overflow_code": "Overflow code",
+    "not_found": "Not found!",
+    "expired_token": "Token is expired!",
+    "can_not_found_model": " Can not found {name} model",
+    "can_not_found_task": "can not found this task",
+    "can_not_found_all_users_in_model": "can not found all users in model",
+    "can_not_access_this_task": "Can not access this task",
+    "payment_amout_invalid": "Payment amount invalid",
+    "can_not_found_this_name": "Can not found this {name}",
+    "invalid_payment_method": "Invalid payment method",
+    "invalid_selected_new_invoice": "NEW INVOICE SELECTED INVALID",
+    "PAYMENT AMOUNT INVALID": "PAYMENT AMOUNT INVALID",
+    "Can_not_found_payment_method_ID": "Can not found payment method ID",
+    "Can_not_found_payment": "Can not found payment",
+    "CAN_NOT_CREATE_ORDER_ITEM_WITHOUT_CURRENCY": "CAN NOT CREATE ORDER ITEM WITHOUT CURRENCY",
+    "INVALID_CUSTOMER_DATA": "INVALID CUSTOMER DATA",
+    "Customer_does_not_exist": "Customer does not exist",
+    "INVOICE_IS_NOT_FOUND": "INVOICE IS NOT FOUND",
+    "INVOICE_CODE_IS_REQUIRE": "INVOICE CODE IS REQUIRE",
+    "THIS_INVOICE_CAN_NOT_CREATE_PAYMENT": "THIS INVOICE CAN NOT CREATE PAYMENT",
+    "Cannot_find": "Cannot find {name}",
+    "Can_not_found_invoice_by_invoice_ID": "Can not found invoice by invoice ID",
+    "Can_not_create_payment_for_this_invoice": "Can not create payment for this invoice",
+    "EXISTED_RELATION_DATA": " EXISTED RELATION DATA",
+    "this_InvoiceID_has_found": "this Invoice ID has found",
+    "You_can_not_update_this_InvoiceCode": "You can not update this InvoiceCode",
+    "Customer_Level_name_already_exists": "Customer Level name already exists",
+    "cannot_delete_because_relations": "Exited relation data",
+    "merge_customer_success": "Merge customer successfully"
+  },
+
+  "customer": {
+    "company_has_been_created": "Customer has been created"
+  },
+
+  "country": {
+    "country_has_been_created": "Country {name} already exists"
+  },
+
+  "sale-chanel": {
+    "sale-chanel_has_been_created": " Sale Channel {name} already exists"
+  },
+
+  "deal": {
+    "cannot_found_this_customer": "CANNOT FOUND THIS CUSTOMER",
+    "cannot_find_currency": "Cannot find Currency"
+  },
+
+  "contact": {
+    "cannot_update_contact": "CAN NOT UPDATE CONTACT"
+  },
+
+  "order": {
+    "can_not_found_deal_id": "Can not found deal ID",
+    "currencyId_fail": "CurrencyId fail",
+    "cannot_find_currency": "Cannot find Currency",
+    "cannot_update_currency": "Cannot update Currency",
+    "CAN_NOT_CHANGE_ORDER_CURRENCY": "CAN NOT CHANGE ORDER CURRENCY"
+  },
+
+  "notification": {
+    "mention": "has mentioned you in a comment on a {value}",
+    "assign": "<p>has assigned you in a <span style='font-weight:700'> {value} </span>",
+    "left": "<p> has left you at a <span style='font-weight:700'> {value} </span>",
+    "edit": "<p> edited a <span style='font-weight:700'> {value} </span>",
+    "comment": "<p> has commented in a <span style='font-weight:700'> {value}</span> where you are assigned ",
+    "attach_file": "<p> attach a file at a <span style='font-weight:700'> {value} </span> where you are assigned",
+    "attach_image": "<p> attach a image at a <span style='font-weight:700'> {value} </span> where you are assigned",
+    "reacted": "reacted to your comment on  <span style='font-weight:700'> {value} </span>",
+    "task_dueDate" : "<p> <span style='font-weight:700'> {value} </span>  due soon"
+  },
+
+  "label": {
+    "deals": "Deal",
+    "contacts": "Contact",
+    "orders": "Order",
+    "invoices": "Invoice",
+    "payments": "Payment",
+    "tasks": "Task",
+    "customers": "Customer",
+    "payment_partner": "Payment partner",
+    "invoice_partner": "Invoice partner"
+  },
+
+  "lognote": {
+    "create": "This {name} has been created",
+    "edit": "This {name} has been edited",
+
+    "phone": "phone",
+    "change_phone": "This {name1} {name2} has been changed from [ {name3} ] to [ {name4} ]",
+
+    "Descriptions": "descriptions",
+    "change_descriptions": "This {name1} {name2} has been edited ",
+
+    "email": "email",
+    "change_email": "This {name1} {name2} has been changed from [ {name3} ] to [ {name4} ]",
+
+    "card_visit": "card visit",
+    "change_card_visit": "{name1} {name2} has been edited",
+
+    "archive": "archive",
+    "name": "name",
+    "change_name": "This {name1} {name2} has been changed from [{name3}] to [{name4}]",
+    "update_name": "This {name1} {name2} has updated to be [{name3}]",
+
+    "status": "status",
+    "change_status": "This {name1} {name2} has been reissued ",
+    "update_status": "This {name1} ${columnchange} has updated to be [{name2}]",
+
+    "payment_method": "Payment method",
+    "create_payment": "This [{name1}] invoice has been created payment with status is [{name2}] and payment date is [{name3}]",
+
+    "province": "province",
+    "invoice_customer_name": "Invoice Customer Name",
+
+    "male": "male",
+    "female": "female",
+    "gender": "gender",
+    "change_gender": "Changed the gender of {name1} from [ {name2} ] to [ {name3} ]",
+
+    "security": "security",
+    "priority": "priority",
+    "delivery_date": "delivery date",
+    "value": "value",
+    "country_name": "country name",
+    "currency": "currency",
+    "due_date": "due date",
+    "start_date": "start date",
+    "amount": "amount",
+    "date": "date",
+
+    "check_list": "Check list",
+    "create_check_list": "This {name1} of {name2} has been created in this {name3}",
+
+    "left": "left",
+    "join": "join",
+    "user_asign": "{name1} has {name2} of this {name3}",
+
+    "done": "done",
+    "done_object": "{name1} has {name2} the  {name3}  of {name4} at {name5}",
+
+    "create_order_item": "This [ {name} ] order item has been created",
+    "delete_order_item": "This [ {name} ] order item has been deleted",
+
+    "create_invoice": "This [ {name} ] invoice has been created",
+    "create_order": "This [ {name} ] order has been created",
+    "create_deal": "This [ {name} ] deal has been created",
+
+    "attach_image": "Has attached this image",
+    "attach_file": "Has attached this file",
+    "few_second_ago": "Few seconds ago",
+    "minutes_ago": "{time} minutes ago",
+    "hours_ago": "{time} hours ago"
+  }
+}

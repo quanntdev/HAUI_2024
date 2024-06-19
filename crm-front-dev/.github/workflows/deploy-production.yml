@@ -1,0 +1,73 @@
+name: Release production
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_code:
+        description: 'Type your secure code to deploy'
+        required: true
+        default: 'your code here'  
+jobs:
+  # Auto deploy to Production server
+  release:
+    name: Release production
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    env:
+      SOURCE_PATH: ${{ secrets.SERVER_PRODUCTION_SOURCE_PATH }}
+    steps:
+      - name: Check secure deploy code
+        shell: bash
+        run: |
+          if [ "${{ github.event.inputs.deploy_code }}" == "${{ secrets.DEPLOY_CODE }}" ]; then
+            echo >&2 "Verified!";
+          else
+            echo >&2 "Permission denied!";
+            exit 1
+          fi
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/prod.key
+          chmod 600 ~/.ssh/prod.key
+          cat >>~/.ssh/config <<END
+          Host prod
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/prod.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_KEY: ${{ secrets.SERVER_PRODUCTION_KEY }}
+          SSH_HOST: ${{ secrets.SERVER_PRODUCTION_HOST }}
+          SSH_USER: ${{ secrets.SERVER_PRODUCTION_USER }}
+      # Checkout code and build
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+      # Setup cache to increase speed
+      - uses: actions/cache@v3
+        with:
+          # See here for caching with `yarn` https://github.com/actions/cache/blob/main/examples.md#node---yarn or you can leverage caching with actions/setup-node https://github.com/actions/setup-node
+          path: |
+            ~/.npm
+            ${{ github.workspace }}/.next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+      - name: Copy .env file from remote server
+        run: |
+          rsync -av prod:$SOURCE_PATH/.env ./
+      - name: Create build to temp folder
+        run: |
+          npm install
+          BUILD_DIR=temp ./node_modules/next/dist/bin/next build
+      - name: Copy build folder to remote server
+        run: |
+          rsync -avz ./temp prod:$SOURCE_PATH/
+      - name: SSH to server and run deploy.sh script
+        run: ssh prod "cd" $SOURCE_PATH "&& sh deploy.sh master"

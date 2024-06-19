@@ -1,0 +1,91 @@
+@import "../../styles/styles.module.scss";
+
+.column-header {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.item_id {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.DragItem {
+  padding: 7px 0 0 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 0 0 20px 0;
+  display: grid;
+  grid-gap: 20px;
+  flex-direction: column;
+}
+
+.item_name {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    width: 50%;
+
+    .icon {
+      font-size: 15px;
+      margin-right: 10px;
+      color: $textBtnCancel;
+
+      .icon-item {
+        font-size: 15px;
+        color: $textBtnCancel;
+        transform: translateY(2px);
+      }
+    }
+
+    .icon-item-number {
+      font-size: 15px;
+      color: $textBtnCancel;
+      margin-left: 2px;
+      transform: translateY(13px);
+    }
+  }
+
+  .right {
+    width: 50%;
+  }
+}
+
+.DroppableStyles {
+  padding: 10px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.column-body {
+  height: 64vh;
+  overflow-y: scroll;
+  width: 335px;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 6px;
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, $colorPrimaryLight, $colorBlue);
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+ .column-body {
+  height:350px !important;
+ }
+}

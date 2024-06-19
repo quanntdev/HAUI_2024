@@ -1,0 +1,82 @@
+@import "../../styles/styles.module.scss";
+
+.grid-order-detail {
+  padding: 10px;
+  .grid-title-box{
+    padding-left: 10px;
+    background-color: #F3F1F1;
+  }
+}
+
+.box-order-detail {
+  padding: 0 10px;
+  border-right: 2px dashed $colorGrayDraft;
+  &-row {
+    height: 40px;
+    margin: 10px 0;
+    padding-right: 10px;
+    align-items: center;
+  }
+  &-form {
+    margin: 10px 0;
+    padding-right: 10px;
+    align-items: center;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.box-content {
+  overflow: auto;
+  height: 450px;
+}
+
+.description-box {
+  padding-right: 10px;
+  height: 200px;
+}
+
+.grid-title-box {
+  margin-left: -3px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 787px) {
+  .grid-order-detail {
+    justify-content: center;
+    .box-order-detail {
+      border-right: none;
+      &-row {
+        justify-content: space-between;
+      }
+    }
+    .box-right {
+      margin-top: 10px;
+      border-top: 2px dashed $colorGrayDraft;
+    }
+  }
+}
+
+.box-title {
+  padding: 10px;
+  margin: 10px 0;
+  margin-left: -10px;
+  background-color: $colorGrey;
+  width: 100%;
+}
+
+.box-title-right {
+  padding: 10px;
+  margin: 15px 0;
+  margin-left: -10px;
+  background-color: $colorGrey;
+  width: 100%;
+  margin-top: -10px;
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

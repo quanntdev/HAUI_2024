@@ -1,0 +1,18 @@
+.default-mutiSelect-css {
+  margin: 0 20px 0 0;
+  z-index: 1000;
+}
+
+.form-muti-filter {
+  z-index: 1000;
+}
+
+@media screen and (max-width: 375px){
+  .default-mutiSelect-css {
+    margin-top: 10px;
+  }
+
+  .default-mutiSelect-box {
+    margin-top: 10px;
+  }
+}

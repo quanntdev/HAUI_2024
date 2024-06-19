@@ -1,0 +1,105 @@
+@import "../../../styles/styles.module.scss";
+
+.notification-list {
+  width: 25%;
+  position: absolute;
+  background-color: $backgroundNotificationList;
+  height: 700px;
+  right: 0;
+  margin-top: 790px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.seen-btn {
+  min-width: 20px !important;
+  height: 20px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+}
+
+.notification-header {
+  padding: 20px 15px;
+  border-bottom: 2px solid $colorBlack;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: white;
+}
+
+.notification-body {
+  padding: 15px;
+}
+
+.notification-body-content-item {
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white !important;
+  }
+
+  .content {
+    margin-left: 10px;
+    width: 90%;
+
+    .head {
+
+      .name {
+        font-weight: 600;
+      }
+
+      .time {
+        margin-left: 10px;
+        font-size: 13px;
+        color: $textBtnCancel;
+        margin-top: 2px;
+      }
+
+      .notification {
+        font-size: 14px;
+        margin-top: 2px;
+      }
+    }
+
+    .link {
+      color: $textLink;
+      font-size: 14px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .bot span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100% !important;
+    }
+  }
+}
+
+.seen {
+  width: 10%;
+  align-items: center;
+  transform: translateY(30%);
+}
+
+.notification-body-content {
+  height: 600px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $textLink;
+    border-radius: 10px;
+  }
+}

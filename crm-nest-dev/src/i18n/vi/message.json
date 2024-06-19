@@ -1,0 +1,186 @@
+{
+  "Nicer" : "Nicer 2 {name}",
+  "status_messages": {
+    "validate_failed":"Lưu Thất Bại",
+    "login_success": "Đăng nhập thành công",
+    "logout_success": "Đăng xuất thành công",
+    "create_success": "Tạo thành công",
+    "delete_success": "Xóa thành công",
+    "update_success": "CẬP NHẬT THÀNH CÔNG",
+    "get_success": "Lấy thành công",
+    "existed_relation_data": "Đã tồn tại dữ liệu liên quan",
+    "invalid_customer_data": "Dữ liệu khách hàng không hợp lệ",
+    "invalid_token_data": "Dữ liệu mã thông báo không hợp lệ",
+    "cid_is_existed": "CID đã tồn tại",
+    "bad_request": "Yêu cầu không hợp lệ",
+    "validation_failed": "Xác thực thất bại",
+    "admin_not_found": "Không tìm thấy quản trị viên",
+    "contact_not_found": "Không tìm thấy liên hệ",
+    "unauthorized": "Không được ủy quyền",
+    "password_invalid": "Mật khẩu không hợp lệ",
+    "email_invalid": "Địa chỉ email không hợp lệ",
+    "not_found_user": "Không tìm thấy người dùng",
+    "data_not_found": "Không tìm thấy dữ liệu",
+    "status_default_not_found": "Không tìm thấy trạng thái mặc định",
+    "cid_not_found": "Không tìm thấy CID",
+    "cid_over_limit": "CID vượt quá giới hạn",
+    "billing_type_default_not_found": "Không tìm thấy loại thanh toán mặc định",
+    "overflow_code": "Mã tràn bộ nhớ",
+    "not_found": "Không tìm thấy!",
+    "expired_token": "Mã thông báo đã hết hạn!",
+    "can_not_found_model":"Không tìm thấy { name }vừa tạo",
+    "can_not_found_task":"Không tìm thấy nhiệm vụ",
+    "can_not_found_all_users_in_model":"Không tìm thấy người dùng nào",
+    "can_not_access_this_task":"Không thể truy cập nhiệm vụ này",
+    "payment_amount_invalid":"Số tiền thanh toán không hợp lệ",
+    "can_not_found_this_name":"Không thể tìm thấy {name} này",
+    "invalid_payment_method":"Phương thức thanh toán không hợp lệ",
+    "invalid_selected_new_invoice":"HÓA ĐƠN MỚI ĐƯỢC CHỌN KHÔNG HỢP LỆ",
+    "PAYMENT_AMOUNT_INVALID":"SỐ TIỀN THANH TOÁN KHÔNG HỢP LỆ",
+    "Can_not_found_payment_method_ID":"Không thể tìm thấy ID phương thức thanh toán",
+    "Can_not_found_payment":"Không thể tìm thấy  phương thức thanh toán",
+    "CAN_NOT_CREATE_ORDER_ITEM_WITHOUT_CURRENCY":"KHÔNG THỂ TẠO ĐƠN HÀNG KHÔNG CÓ TIỀN TỆ",
+    "INVALID_CUSTOMER_DATA" :"DỮ LIỆU KHÁCH HÀNG KHÔNG HỢP LỆ",
+    "Customer_does_not_exist":"Khách hàng không tồn tại",
+    "INVOICE_IS_NOT_FOUND":"KHÔNG TÌM THẤY HÓA ĐƠN",
+    "INVOICE_CODE_IS_REQUIRE":"BẮT BUỘC MÃ HÓA ĐƠN",
+    "THIS_INVOICE_CAN_NOT_CREATE_PAYMENT":"HÓA ĐƠN NÀY KHÔNG THỂ TẠO THANH TOÁN",
+    "Cannot_find":"không tìm thấy {name}",
+    "Can_not_found_invoice_by_invoice_ID":"Không thể tìm thấy hóa đơn theo ID hóa đơn",
+    "Can_not_create_payment_for_this_invoice":"Không thể tạo thanh toán cho hóa đơn này",
+    "EXISTED_RELATION_DATA":"DỮ LIỆU QUAN HỆ TỒN TẠI",
+    "this_InvoiceID_has_found":"ID hóa đơn này đã được tìm thấy",
+    "You_can_not_update_this_InvoiceCode":"Bạn không thể cập nhật Mã hóa đơn này",
+    "Customer_Level_name_already_exists":"Tên Customer Level đã tồn tại",
+    "cannot_delete_because_relations":"Đã tồn tại dữ liệu liên quan",
+    "merge_customer_success": "Hợp nhất thành công"
+  },
+
+  "customer": {
+    "company_has_been_created" :" Khách hàng đã tồn tại"
+  },
+  "country": {
+    "country_has_been_created" : "Quốc Gia {name} Đã tồn tại"
+  },
+  "sale-chanel": {
+    "sale-chanel_has_been_created" : "Kênh bán hàng {name} Đã tồn tại"
+  },
+
+  "deal" : {
+    "cannot_found_this_customer" : "KHÔNG TÌM THẤY KHÁCH HÀNG NÀY",
+    "cannot_find_currency" : "Không tìm thấy đơn vị tiền tệ"
+  },
+
+  "contact" : {
+    "cannot_update_contact" : "KHÔNG THỂ CẬP NHẬT LIÊN HỆ"
+  },
+
+  "order" : {
+    "can_not_found_deal_id" : "Không tìm thấy ID giao dịch",
+    "currencyId_fail" : "CurrencyId không hợp lệ",
+    "cannot_find_currency" : "Không tìm thấy đơn vị tiền tệ",
+    "cannot_update_currency" : "Không thể cập nhật đơn vị tiền tệ",
+    "CAN_NOT_CHANGE_ORDER_CURRENCY" : "KHÔNG THỂ THAY ĐỔI ĐƠN VỊ TIỀN TỆ ĐƠN HÀNG"
+  },
+
+  "notification": {
+    "mention" : "đã nhắc đến bạn trong một bình luận ở {value}",
+    "assign" : "<p>đã phân công bạn vào <span style='font-weight:700'> {value} </span>",
+    "left" : "<p> đã rời bạn khỏi <span style='font-weight:700'> {value} </span>",
+    "edit" : "<p> đã chỉnh sửa <span style='font-weight:700'> {value} </span>",
+    "comment": "<p> đã bình luận ở <span style='font-weight:700'> {value}</span> của bạn",
+    "attach_file": "<p> đã đính kèm file vào <span style='font-weight:700'> {value} </span> của bạn",
+    "attach_image": "<p> đã đính kèm ảnh vào <span style='font-weight:700'> {value} </span> của bạn",
+    "reacted": "<p>đã bày tỏ cảm xúc vào bình luận của bạn ở <span style='font-weight:700'> {value} </span>",
+    "task_dueDate" : "<p> <span style='font-weight:700'> {value} </span>  sắp đến hạn"
+  },
+
+  "label" : {
+    "deals" : "Thỏa thuận",
+    "contacts": "Liên hệ",
+    "orders": "Đặt hàng",
+    "invoices": "Hóa đơn",
+    "payments": "Thanh toán",
+    "tasks": "Nhiệm vụ",
+    "customers": "Khách hàng",
+    "payment_partner": "Thanh toán cho đối tác",
+    "invoice_partner": "Hóa đơn cho đối tác"
+  },
+
+  "lognote":{
+    "create":"{name} này đã được tạo",
+    "edit":"{name} này đã được chỉnh sửa",
+
+    "phone":"Số điện thoại",
+    "change_phone":" {name1} {name2} này đã đổi từ [ {name3} ] thành [ {name4} ]",
+
+    "Descriptions":"Mô tả",
+    "change_descriptions":"{name1} của {name2} này đã được chỉnh sửa",
+
+    "email":"E-mail",
+    "change_email":"{name1} {name2} này đã được thay đổi từ [ {name3} ] thành [ {name4} ]",
+     
+    "card_visit":"Danh thiếp",
+    "change_card_visit":"{name2} đã được chỉnh sửa",
+    
+    
+    "archive":"Lưu trữ",
+    "name":"Tên",
+    "change_name":"{name2} của {name1} này đã được thay đổi từ [{name3}] thành [{name4}]",
+    "update_name":"{name2} của {name1}  này đã được cập nhật thành [{name3}]",
+     
+    "status":"Trạng thái",
+    "change_status":"{name2} của {name1} này đã được phát hành lại",
+    "update_status":"{name1} {name2} này đã được cập nhật thành [{name2}]",
+   
+    "payment_method": "Phương thức thanh toán",
+    "create_payment":"Hóa đơn [{name1}] này đã được tạo thanh toán với trạng thái là [{name2}] và ngày thanh toán là [{name3}]",
+
+
+    "province":"tỉnh",
+    "invoice_customer_name":"Tên khách hàng hóa đơn",
+
+    "male":"Nam giới",
+    "female":"Nữ giới",
+    "gender":"giới tính",
+    "change_gender":"Đã thay đổi giới tính của {name1} này từ [ {name2} ] thành [ {name3} ]",
+    
+    "security":"bảo vệ",
+    "priority":"ưu tiên",
+    "delivery_date":"ngày giao hàng",
+    "value":"Giá trị",
+    "country_name":"tên quốc gia",
+    "currency":"tiền tệ",
+    "due_date":"ngày đáo hạn",
+    "start_date":"ngày bắt đầu",
+    "amount":"Số tiền",
+    "date":"Ngày",
+     
+    "check_list":"Danh mục",
+    "create_check_list":"{name1} này của {name2} đã được tạo trong {name3} này",
+     
+    "left":"rời khỏi",
+    "join":"tham gia",
+    "user_asign":"{name1} đã {name2} {name3} này",
+
+    
+    "done":"hoàn thành",
+    "done_object":"{name1} có {name2} {name3} của {name4} tại {name5}",
+
+    "create_order_item":"Mục đặt hàng [ {name} ] này đã được tạo",
+    "delete_order_item":"Mục đặt hàng [ {name} ] này đã bị xóa",
+
+    "create_invoice":"Hóa đơn [ {name} ] này đã được tạo",
+    "create_order":"Đơn hàng [ {name} ] này đã được tạo",
+    "create_deal":"Thỏa thuận [ {name} ] này đã được tạo",
+
+    "attach_image":"Đã đính kèm hình ảnh này",
+    "attach_file":"Đã đính kèm tập tin này",
+
+    "few_second_ago":"Vài giây trước",
+     "minutes_ago":"{time} phút trước ",
+     "hours_ago":"{time} giờ trước"
+
+  }
+}
+

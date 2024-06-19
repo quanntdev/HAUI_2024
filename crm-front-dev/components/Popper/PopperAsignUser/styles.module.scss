@@ -1,0 +1,37 @@
+@import "../../../styles/styles.module.scss";
+
+.detail-title {
+  display: flex;
+  align-items: center;
+}
+
+.checklist-popover {
+  &-title {
+    margin: 4px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid $textTitlePayment;
+
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 auto;
+    }
+  }
+
+  &-content {
+    margin: 8px 8px 16px;
+    width: 94%;
+  }
+}
+
+.icon-add {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  font-size: 16px;
+  background-color: $textPayment;
+}

@@ -1,0 +1,297 @@
+@import "../../styles/styles.module.scss";
+
+.breadcrumb-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorWhite;
+  padding: 10px;
+
+  .breadcrumb-title {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    .icon-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $colorWhite;
+      background: linear-gradient(to right, $colorPink, $colorPurple);
+    }
+
+    .title {
+      margin-left: 10px;
+    }
+  }
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-paper {
+  background-color: white;
+  border-right: 2px dashed lightgray;
+}
+
+.contact-pape {
+  padding-left: 20px !important;
+
+  background-color: white;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 20px 0;
+
+  .btn-app-icon {
+    color: $colorPurple;
+  }
+}
+
+.btn-delete {
+  background-color: $btnDelete;
+  color: $colorWhite;
+
+  &:hover {
+    background-color: $btnDelete;
+  }
+}
+
+.contact {
+  &-wrapper {
+    padding-top: 16px;
+  }
+
+  &-card {
+    display: flex;
+    background-color: white;
+    border: 1px solid $colorBorder;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  &-box {
+    padding: 16px;
+    margin-bottom: 30px;
+
+    .box-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .box-title {
+      font-size: 16px;
+      font-weight: bold;
+      width: 120%;
+    }
+
+    .box-title-re {
+      font-size: 16px;
+      font-weight: bold;
+      width: 120%;
+      padding: 0 !important;
+    }
+
+    .box-content {
+      position: relative;
+      min-height: 264px;
+      height: 300px;
+      overflow: auto;
+
+      .box-button {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 100;
+      }
+
+      .image-upload {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.box-content-span {
+  img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+.profile-view {
+  &-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile-view-right {
+    border-right: 2px dashed lightgray;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+  }
+
+  .profile-info-left {
+    padding-right: 5px;
+    width: 100%;
+
+    .profile-info {
+      position: relative;
+      margin-top: 16px;
+      width: 90%;
+      margin-left: 30px;
+
+      p:not(:first-child) {
+        margin-top: 14px;
+      }
+    }
+  }
+
+  .personal-info {
+    list-style: none;
+    margin: 0 16px;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .title {
+      display: block;
+      color: #4f4f4f;
+      float: left;
+      margin-right: 30px;
+      width: 25%;
+    }
+
+    .text {
+      display: block;
+      color: #8e8e8e;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .text_children {
+        min-width: 100px;
+        min-height: 24px;
+      }
+    }
+  }
+
+  .profile-edit {
+    position: absolute;
+    right: 0;
+    top: 25px;
+
+    .edit-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.box-upload {
+  margin-top: 16px;
+
+  label {
+    background-color: $colorPrimary;
+
+    &:hover {
+      background-color: $colorPrimaryLight;
+    }
+  }
+
+  .btn-upload {
+    position: relative;
+    left: -85px;
+    top: 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-card {
+    position: relative;
+
+    .profile-edit {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  .profile-view {
+    .profile-view-left {
+      padding-bottom: 16px;
+      border-right: none;
+      border-bottom: 2px dashed $colorGrayDraft;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mg-14 {
+    margin-top: -14px;
+  }
+}
+
+.icon-delete {
+  position: absolute;
+  top: 184px;
+  right: 60px;
+}
+
+.box-title {
+  padding: 10px;
+  margin: 10px 0;
+  margin-left: -25px;
+  background-color: $colorGrey;
+}
+
+.box-title-right {
+  padding: 10px;
+  margin: 15px 0;
+  background-color: $colorGrey;
+  width: 99%;
+  padding-left: 10px;
+  margin-bottom: 10px;
+
+  p {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .page-filter {
+    display: block;
+  }
+
+  .page-title {
+    display: block;
+
+    .btn {
+      margin-top: 10px;
+    }
+  }
+}

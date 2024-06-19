@@ -1,0 +1,41 @@
+@import "../../styles/styles.module.scss";
+
+.action {
+  .btn-delete,
+  .btn-edit {
+    svg {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  }
+  .btn-edit {
+    margin-right: 5px;
+  }
+
+  .btn-delete {
+    margin-left: 5px;
+  }
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .btn_create {
+    @extend .box-shadow;
+    @extend .bg-gradient-primary;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    &:hover {
+      background: linear-gradient(to right, $colorPrimaryLight, $colorBlue);
+    }
+  }
+}
+
+.table-row {
+  &:last-child td, &:last-child th {
+    border: 0;
+  }
+}

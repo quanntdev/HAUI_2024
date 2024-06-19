@@ -1,0 +1,52 @@
+.wrapContent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapLogin {
+  width: 350px;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.loginImage {
+  min-width: 65% !important;
+  margin-bottom: 30px;
+}
+
+.logContent {
+  margin-top: 50px;
+}
+
+.loginInput {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.inputPass {
+  margin-top: 20px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.rememberText {
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.inputText {
+  font-weight: bold;
+}

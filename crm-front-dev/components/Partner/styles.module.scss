@@ -1,0 +1,249 @@
+@import "../../styles/styles.module.scss";
+
+.dialog {
+  &-edit {
+    position: absolute;
+    left: 10;
+    top: 50;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.sample {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main-block {
+  background: linear-gradient(to right, $colorPrimaryLight, $colorBlue);
+  width: 80%;
+  height: 70px;
+  border-right: none;
+  z-index: 10;
+  position: relative;
+  border-radius: 5px 0 0 5px;
+  align-items: center;
+
+  .content {
+    height: 70px;
+    line-height: 70px;
+    white-space: nowrap;
+    display: flex;
+
+    .company-name {
+      font-size: 25px;
+      font-weight: bold;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+}
+.triangle {
+  position: relative;
+  margin: auto auto auto 0;
+  width: 49px;
+  height: 49px;
+  top: -0.204px;
+  transform: rotate(-46deg);
+  -webkit-transform: rotate(-46deg);
+  -moz-transform: rotate(-46deg);
+  -o-transform: rotate(-46deg);
+  -ms-transform: rotate(-46deg);
+  left: -24px;
+  background: $colorBlue;
+  z-index: 5;
+  border-radius:0px 0px 5px 0px;
+}
+
+.main-block2 {
+  background: linear-gradient(to right, $colorPrimaryLight, $colorBlue);
+  width: 80%;
+  height: 70px;
+  border-right: none;
+  z-index: 10;
+  position: relative;
+  border-radius: 0 5px 5px 0;
+
+  .content {
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+
+    .partner-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      margin-right: 10px;
+      float: right;
+      cursor: pointer;
+    }
+
+    .order-name {
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    // .order-span {
+    //   color: rgb(27, 22, 57);
+    // }
+
+    .partner-name-center {
+     margin-top: 5px;
+    }
+  }
+}
+.triangle2 {
+  position: relative;
+  margin: auto auto auto 0;
+  width: 50px;
+  height: 52px;
+  top: -1px;
+  transform: rotate(-46deg);
+  -webkit-transform: rotate(-46deg);
+  -moz-transform: rotate(-46deg);
+  -o-transform: rotate(-46deg);
+  -ms-transform: rotate(-46deg);
+  left: 67px;
+  background: white;
+  z-index: 11;
+  border-radius:0px 0px 5px 0px;
+}
+
+.triangle3 {
+  position: relative;
+  margin: auto auto auto 0;
+  width: 47px;
+  height: 47px;
+  top: 0px;
+  transform: rotate(-46deg);
+  -webkit-transform: rotate(-46deg);
+  -moz-transform: rotate(-46deg);
+  -o-transform: rotate(-46deg);
+  -ms-transform: rotate(-46deg);
+  left: 15px;
+  background: $colorPrimaryLight;
+  z-index: 11;
+  border-radius:5px;
+}
+
+.triangle4 {
+  position: relative;
+  margin: auto auto auto 0;
+  width: 47px;
+  height: 48px;
+  margin-top: 13px;
+  transform: rotate(-46deg);
+  -webkit-transform: rotate(-46deg);
+  -moz-transform: rotate(-46deg);
+  -o-transform: rotate(-46deg);
+  -ms-transform: rotate(-46deg);
+  left: 90px;
+  background: white;
+  z-index: 14;
+  border-radius:5px;
+}
+
+.right-title {
+  margin-top: 20px;
+  float: right;
+}
+
+.required {
+  color: red
+}
+
+.content-title {
+  font-size: 15px;
+  color: $textBrow;
+}
+
+.content-box {
+  border-bottom: 1px solid $iconMark;
+  padding-bottom: 5px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.form-box {
+  width: 100%;
+  display: flex;
+}
+
+.form-title {
+  background-color: $textPayment;
+  border: 1px solid $textTitlePayment;
+  padding: 4px 0;
+}
+
+.form-title-text {
+  border: 1px solid $textTitlePayment;
+  padding: 4px 0;
+}
+
+.flex-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-typography {
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: $textPayment;
+  font-weight: 300;
+}
+
+.icon-edit {
+  margin-bottom: 8px;
+  float: right;
+}
+
+.box-text-total {
+  margin-top: 5px;
+  margin-left: 5px;
+  color: $textValueInvoice;
+  overflow-wrap: break-word;
+}
+
+.box-text-total-push {
+  margin-top: 5px;
+  margin-left: 5px;
+  overflow-wrap: break-word;
+}
+
+.value-balance {
+  display: flex;
+  justify-content: end;
+
+  .balance-text {
+    font-size: 14px;
+
+    span {
+      font-style: italic;
+    }
+  }
+}
+
+.input-file {
+  display: none;
+}
+
+.btn-delete {
+  position: absolute;
+  top: 55%;
+  right: 0;
+}
+

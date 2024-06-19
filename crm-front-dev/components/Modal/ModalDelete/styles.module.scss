@@ -1,0 +1,18 @@
+@import "../../../styles/styles.module.scss";
+
+.dialog-actions {
+  background-color: $textContact;
+
+  .btn-cancel {
+    color: $textBtnCancel;
+  }
+}
+
+.btn-delete {
+  background-color: $btnDelete;
+  color: $colorWhite;
+
+  &:hover {
+    background-color: $btnDelete;
+  }
+}

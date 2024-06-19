@@ -1,0 +1,14 @@
+
+@import "./responsive_config";
+@import "./_variables.module.scss";
+@import "./_mixins.module.scss";
+
+.bg-gradient-primary {
+  background: linear-gradient(to right, $colorPrimaryLight, $colorPrimary);
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 3px 8.3px 0.7px rgb(163 93 255 / 35%);
+  box-shadow: 0px 3px 8.3px 0.7px rgb(163 93 255 / 35%);
+  color: $colorWhite;
+}
